@@ -1,0 +1,10 @@
+def reverse_word(word):
+    reversed_word = ''
+    for i in range(len(word) - 1, -1, -1):
+        reversed_word += word[i]
+    return reversed_word
+
+# Replace 'word' with the word you want to reverse
+word_to_reverse = 'hello'
+reversed_word = reverse_word(word_to_reverse)
+print('Reversed word:', reversed_word)
