@@ -1,0 +1,11 @@
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n-1):
+        a, b = b, a + b
+    return a
+
+# The value of N is provided as input here
+N = int(input("Enter the value of N: "))
+
+# Since you've specified N=8, let's use it as an example
+print(f"The {N}th Fibonacci number is: {fibonacci(8)}")
