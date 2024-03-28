@@ -1,0 +1,15 @@
+def calculate_total_amount(notes):
+    total_amount = sum(denomination * count for denomination, count in notes.items())
+    return total_amount
+
+# Define the number of notes for each denomination in the ATM
+notes = {
+    2000: 50,  # Example: 50 notes of 2000
+    500: 100,  # Example: 100 notes of 500
+    200: 200,  # Example: 200 notes of 200
+    100: 500,  # Example: 500 notes of 100
+}
+
+# Calculate and print the total amount
+total = calculate_total_amount(notes)
+print(f"The total amount available in the ATM is: ₹{total}")
